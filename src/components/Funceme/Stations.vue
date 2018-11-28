@@ -16,7 +16,7 @@
         </div>
         <b-table
           :loading="loading"
-          :data="filter"
+          :data="stations"
           :paginated="true"
           :per-page="10"
           :columns="stationsColumns">
