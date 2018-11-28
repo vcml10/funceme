@@ -1,7 +1,7 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
-import { initializeApp } from 'firebase'
+// import { initializeApp } from 'firebase'
 
 // App things
 import App from './App'
@@ -9,10 +9,11 @@ import router from './router'
 
 // Global components
 import MainMenu from '@/components/Global/MainMenu.vue'
+import Stations from '@/components/Funceme/Stations.vue'
 
 // Local variables
 import { store } from './store'
-import { config } from './helpers/firebaseConfig'
+// import { config } from './helpers/firebaseConfig'
 
 // Bulma and Buefy - Theme
 import Buefy from 'buefy'
@@ -26,6 +27,7 @@ require('./assets/css/login.css')
 
 // Using local components
 Vue.component('main-menu', MainMenu)
+Vue.component('stations', Stations)
 
 Vue.config.productionTip = false
 
@@ -37,6 +39,7 @@ new Vue({
   components: { App },
   template: '<App/>',
   created () {
-    initializeApp(config)
+    console.log('call initialize app if you need firebase')
+    // initializeApp(config)
   }
 })

@@ -1,20 +1,11 @@
 <template>
   <div id="index">
-  <section class="hero is-dark is-fullheight">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <div class="column is-6 is-offset-3">
-            <h1 class="title">
-              Em breve
-            </h1>
-            <h2 class="subtitle">
-              Descrição do projeto...
-            </h2>
-
-          </div>
-        </div>
-      </div> <!-- /hero-body -->
-  </section>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Mestrado</h1>
+        <h2 class="subtitle">Projeto de aquisição e processamento de dados da API - FUNCEME.</h2>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -24,7 +15,8 @@ export default {
   data () {
     return {
     }
-  }
+  },
+  components: {}
 }
 </script>
 

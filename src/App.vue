@@ -9,7 +9,8 @@
 export default {
   name: 'App',
   created () {
-    this.$store.dispatch('setAppConfiguration')
+    console.log('call setAppConfiguration app if you need firebase')
+    // this.$store.dispatch('setAppConfiguration')
   },
   computed: {
     app_title () {

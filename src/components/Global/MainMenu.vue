@@ -1,9 +1,9 @@
 <template>
   <nav class="navbar is-fixed-top is-transparent">
     <div class="navbar-brand">
-      <a class="navbar-item" href="#">
-        <span>Logo</span>
-      </a>
+      <router-link class="navbar-item" :to="{ name: 'index' }">
+        <span>Mestrado</span>
+      </router-link>
       <div class="navbar-burger burger" data-target="menu">
         <span></span>
         <span></span>
@@ -13,8 +13,8 @@
 
     <div id="menu" class="navbar-menu">
       <div class="navbar-start">
-        <router-link class="navbar-item" :to="{ name: 'index' }">
-          Página Inicial
+        <router-link class="navbar-item" :to="{ name: 'stations' }">
+          Estações
         </router-link>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="#">
