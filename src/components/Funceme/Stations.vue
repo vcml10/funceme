@@ -62,8 +62,8 @@ export default {
     },
     errorMsg () {
       return this.$store.state.funceme.errorMsg
-    },
-    filter () {
+    }
+    /* filter () {
       var nameRe = new RegExp(this.search_query.name, 'i')
       var data = []
       for (this.i in this.data) {
@@ -74,7 +74,8 @@ export default {
         }
       }
       return this.stations
-    }
+
+    } */
   }
 }
 </script>
